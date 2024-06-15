@@ -1,0 +1,71 @@
+@import url('/assets/css/gruvbox.css');
+
+@font-face {
+    font-family: 'Fira Code SemiBold';
+    src: url('/assets/fonts/FiraCode-SemiBold.ttf');
+}
+
+:root {
+    font-family: Fira Code SemiBold;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: table;
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--gruvbox-bg);
+    color: var(--gruvbox-fg);
+}
+
+.content {
+    display: table-row;
+    height: 100%;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+    user-select: none;
+    margin-top: 32px;
+    min-height: 192px;
+    margin-left: 50%;
+    transform: translate(-50%, 0px);
+    width: fit-content;
+    min-width: fit-content;
+    text-align: center;
+}
+
+.title {
+    font-size: 69px;
+    font-weight: 500;
+}
+
+.title-primary {
+    color: var(--gruvbox-orange);
+    margin-left: 35px;
+    display: inline-block;
+    position: relative;
+}
+
+.title-secondary {
+    margin: 0 15px;
+}
+
+.socials {
+    font-size: 16px;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 16px;
+}
+
+.socials p {
+    text-align: left;
+}
